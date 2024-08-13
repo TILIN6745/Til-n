@@ -143,7 +143,7 @@ const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['TheMystic-Bot-MD', 'Safari', '2.0.0'] : methodCodeQR ? ['TheMystic-Bot-MD', 'Safari', '2.0.0'] : ['Ubuntu', 'Chrome', '20.0.04'],
+browser: opcion == '1' ? ['𝐏𝐇𝐈𝐀 𝐏𝐑𝐎 𝐁𝐎𝐓', 'Safari', '2.0.0'] : methodCodeQR ? ['𝐏𝐇𝐈𝐀 𝐏𝐑𝐎 𝐁𝐎𝐓', 'Safari', '2.0.0'] : ['Ubuntu', 'Chrome', '20.0.04'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -177,17 +177,17 @@ let numeroTelefono
 if (!!phoneNumber) {
 numeroTelefono = phoneNumber.replace(/[^0-9]/g, '')
 if (!Object.keys(PHONENUMBER_MCC).some(v => numeroTelefono.startsWith(v))) {
-console.log(chalk.bgBlack(chalk.bold.redBright("Comience con el código de país de su número de WhatsApp.\nEjemplo: +5219992095479\n")))
+console.log(chalk.bgBlack(chalk.bold.redBright("Comience con el código de país de su número de WhatsApp.\nEjemplo: +5219997946282\n")))
 process.exit(0)
 }} else {
 while (true) {
-numeroTelefono = await question(chalk.bgBlack(chalk.bold.yellowBright('Por favor, escriba su número de WhatsApp.\nEjemplo: +5219992095479\n')))
+numeroTelefono = await question(chalk.bgBlack(chalk.bold.yellowBright('Por favor, escriba su número de WhatsApp.\nEjemplo: +5219997946282\n')))
 numeroTelefono = numeroTelefono.replace(/[^0-9]/g, '')
 
 if (numeroTelefono.match(/^\d+$/) && Object.keys(PHONENUMBER_MCC).some(v => numeroTelefono.startsWith(v))) {
 break 
 } else {
-console.log(chalk.bgBlack(chalk.bold.redBright("Por favor, escriba su número de WhatsApp.\nEjemplo: +5219992095479.\n")))
+console.log(chalk.bgBlack(chalk.bold.redBright("Por favor, escriba su número de WhatsApp.\nEjemplo: +5219997946282.\n")))
 }}
 rl.close()  
 } 
@@ -418,7 +418,7 @@ global.reloadHandler = async function(restatConn) {
   // busque la clave "handler" dentro del json y cámbiela si es necesario
   conn.welcome = '👋 ¡Bienvenido/a!\n@user';
   conn.bye = '👋 ¡Hasta luego!\n@user';
-  conn.spromote = '*[ ℹ️ ] @user Fue promovido a administrador.*';
+  conn.spromote = '*[ ℹ️ ] @user 𝐅𝐮𝐞 𝐩𝐫𝐨𝐦𝐨𝐯𝐢𝐝𝐨 𝐚 𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫.*';
   conn.sdemote = '*[ ℹ️ ] @user Fue degradado de administrador.*';
   conn.sDesc = '*[ ℹ️ ] La descripción del grupo ha sido modificada.*';
   conn.sSubject = '*[ ℹ️ ] El nombre del grupo ha sido modificado.*';
@@ -577,7 +577,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `[ ⏳ ] Uptime: ${uptime}`;
+  const bio = `[ ⏳ ] Uptime: ${uptime} 𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐃𝐎 𝐁𝐘 𝐏𝐇𝐈𝐀 𝐒𝐈 𝐐𝐔𝐈𝐄𝐑𝐄𝐒 𝐂𝐎𝐍𝐓𝐑𝐀𝐓𝐀𝐑𝐋𝐎 𝐂𝐎𝐌𝐔𝐍𝐈𝐂𝐀𝐓𝐄 𝐂𝐎𝐍 +𝟓𝟐 𝟗𝟗𝟗 𝟕𝟗𝟒 𝟔𝟐𝟖𝟐 𝐎 𝐄𝐍𝐓𝐑𝐀 𝐀𝐋 𝐆𝐑𝐔𝐏𝐎 https://chat.whatsapp.com/I4bJRE0ULDd4DJDGxPxKU8`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
