@@ -44,7 +44,7 @@ ${tradutor.texto1[3]} ${level}
 ${tradutor.texto1[4]} ${exp}
 ${tradutor.texto1[5]} ${role}
 ${tradutor.texto1[6]} ${limit}
-PhiaCoins ${money}
+${tradutor.texto1[7]} ${money}
 ${tradutor.texto1[8]} ${joincount}
 ${tradutor.texto1[9]} ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
  ${readMore}
