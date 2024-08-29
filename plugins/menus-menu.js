@@ -32,11 +32,11 @@ const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, i
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `𝐎𝐫𝐞𝐨 𝐁𝐎𝐓 𝐏𝐑𝐎
+    const str = `𝐃𝐚𝐧𝐧𝐲 𝐁𝐎𝐓 𝐏𝐑𝐎
 
 ${tradutor.texto1[1]} ${taguser}
 
-> ★ 𝐎𝐫𝐞𝐨 BOT 🍪★
+> ★ 𝐃𝐚𝐧𝐧𝐲 BOT 🌴★
 
 ${tradutor.texto1[2]}
 
