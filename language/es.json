@@ -3849,7 +3849,7 @@
             ]
         },
         "participantsUpdate": {
-            "texto1": "👋 ¡Bienvenido/a!\n@user",
+            "texto1": "Welcome, @user!').replace('@subject', await m.conn.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽*",
             "texto2": "👋 ¡Hasta luego!\n@user",
             "texto3": "*[ ℹ️ ] @user Fue promovido a administrador.*",
             "texto4": "*[ ℹ️ ] @user Fue degradado de administrador.*",
