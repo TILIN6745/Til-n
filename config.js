@@ -12,19 +12,19 @@ global.confirmCode = ""
 
 global.owner = [
   ['5214461281232', '👑 danny - Creador 👑', true],
-  ['5215610035034', '💫 Oreo 𝐏𝐑𝐎 𝐁𝐎𝐓 - Collaborator 2 💫', true],
-  ['5215610035034']
+  ['5214461281232', '𝐏𝐑𝐎 𝐁𝐎𝐓 - Collaborator 2 💫', true],
+  ['5214461281232']
 ];
 
-global.suittag = ['5215610035034'];
-global.prems = ['5215610035034'];
+global.suittag = ['5214461281232'];
+global.prems = ['5214461281232'];
 
 global.packname = '𝐒𝐓𝐈𝐂𝐊𝐄𝐑';
-global.author = '𝐎𝐫𝐞𝐨 𝐁𝐎𝐓';
-global.wm = '𝐎𝐫𝐞𝐨 𝐁𝐎𝐓';
-global.titulowm = '𝐎𝐫𝐞𝐨 𝐁𝐎𝐓';
-global.titulowm2 = `𝐎𝐫𝐞𝐨 𝐁𝐎𝐓`
-global.igfg = '𝐎𝐫𝐞𝐨 𝐁𝐎𝐓';
+global.author = '𝐃𝐚𝐧𝐧𝐲 𝐁𝐎𝐓';
+global.wm = '𝐃𝐚𝐧𝐧𝐲 𝐁𝐎𝐓';
+global.titulowm = '𝐃𝐚𝐧𝐧𝐲 𝐁𝐎𝐓';
+global.titulowm2 = `𝐃𝐚𝐧𝐧𝐲 𝐁𝐎𝐓`
+global.igfg = '𝐃𝐚𝐧𝐧𝐲 𝐁𝐎𝐓';
 global.wait = '*_[ ⏳ ] Cargando..._*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
@@ -49,16 +49,16 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\n𝐎𝐫𝐞𝐨 𝐁𝐎𝐓`;
-global.gt = '𝐎𝐫𝐞𝐨 𝐁𝐎𝐓';
-global.mysticbot = '𝐎𝐫𝐞𝐨 𝐁𝐎𝐓';
-global.channel = 'https://chat.whatsapp.com/DbvFdi5FdDzF441vYsIsHT';
-global.md = 'https://chat.whatsapp.com/DbvFdi5FdDzF441vYsIsHT';
-global.mysticbot = 'https://chat.whatsapp.com/DbvFdi5FdDzF441vYsIsHT';
+global.wm2 = `${dia} ${fecha}\n𝐃𝐚𝐧𝐧𝐲 𝐁𝐎𝐓`;
+global.gt = '𝐃𝐚𝐧𝐧𝐲 𝐁𝐎𝐓';
+global.mysticbot = '𝐃𝐚𝐧𝐧𝐲 𝐁𝐎𝐓';
+global.channel = 'https://chat.whatsapp.com/L7VhOnhSp6i4Ir6RIfo66K';
+global.md = 'https://chat.whatsapp.com/L7VhOnhSp6i4Ir6RIfo66K';
+global.mysticbot = 'https://chat.whatsapp.com/L7VhOnhSp6i4Ir6RIfo66K';
 global.waitt = '*_[ ⏳ ] Cargando..._*';
 global.waittt = '*_[ ⏳ ] Cargando..._*';
 global.waitttt = '*_[ ⏳ ] Cargando..._*';
-global.nomorown = '5215610035034';
+global.nomorown = '5214461281232';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
