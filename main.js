@@ -143,7 +143,7 @@ const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['𝐏𝐇𝐈𝐀 𝐏𝐑𝐎 𝐁𝐎𝐓', 'Safari', '2.0.0'] : methodCodeQR ? ['𝐏𝐇𝐈𝐀 𝐏𝐑𝐎 𝐁𝐎𝐓', 'Safari', '2.0.0'] : ['Ubuntu', 'Chrome', '20.0.04'],
+browser: opcion == '1' ? ['𝐏𝐫𝐢𝐧𝐜𝐞𝐬𝐚 𝐁𝐎𝐓', 'Safari', '2.0.0'] : methodCodeQR ? ['𝐏𝐫𝐢𝐧𝐜𝐞𝐬𝐚 𝐁𝐎𝐓', 'Safari', '2.0.0'] : ['Ubuntu', 'Chrome', '20.0.04'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -577,7 +577,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `[ ⏳ ] Uptime: ${uptime} 𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐃𝐎 𝐁𝐘 𝐏𝐇𝐈𝐀 𝐒𝐈 𝐐𝐔𝐈𝐄𝐑𝐄𝐒 𝐂𝐎𝐍𝐓𝐑𝐀𝐓𝐀𝐑𝐋𝐎 𝐂𝐎𝐌𝐔𝐍𝐈𝐂𝐀𝐓𝐄 𝐂𝐎𝐍 +𝟓𝟐 𝟗𝟗𝟗 𝟕𝟗𝟒 𝟔𝟐𝟖𝟐 𝐎 𝐄𝐍𝐓𝐑𝐀 𝐀𝐋 𝐆𝐑𝐔𝐏𝐎 https://chat.whatsapp.com/I4bJRE0ULDd4DJDGxPxKU8`;
+  const bio = `[ ⏳ ] Uptime: ${uptime} BY DANNY VNTS`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
