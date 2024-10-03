@@ -143,7 +143,7 @@ const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['𝑷𝒊𝒌𝒂𝒄𝒉𝒖 𝐁𝐎𝐓', 'Safari', '2.0.0'] : methodCodeQR ? ['𝐎𝐫𝐞𝐨 𝐁𝐎𝐓', 'Safari', '2.0.0'] : ['Ubuntu', 'Chrome', '20.0.04'],
+browser: opcion == '1' ? ['TILIN 𝐁𝐎𝐓', 'Safari', '2.0.0'] : methodCodeQR ? ['TILIN 𝐁𝐎𝐓', 'Safari', '2.0.0'] : ['Ubuntu', 'Chrome', '20.0.04'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -577,7 +577,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `[ ⏳ ] Uptime: ${uptime} BY DANNY VNTS`;
+  const bio = `[ ⏳ ] Uptime: ${uptime} TILIN `;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
